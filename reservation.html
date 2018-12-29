@@ -1,0 +1,136 @@
+<html>
+
+<head>
+  <title> Benmohamed Nour Elhak </title>
+  <link href="css/bootstap.css" rel="stylesheet">
+  <link href="css/cssreservation.css" rel="stylesheet">
+  <link href="css/datePicker.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="reservation-card">
+    <div class="header">
+        <span>Register</span>
+    </div>
+    <form class="reservation-form" action='' method="POST">
+      <div class="row">
+        <div class="col-sm-12">
+            <label for="civilite">civilité</label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline" id="civilite">
+          <input class="form-check-input" type="radio" id="first_toggle" name="toggle_option" value="mme">
+          <label class="form-check-label" for="inlineRadio1">Madame</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="first_toggle" name="toggle_option"  value="mlle">
+          <label class="form-check-label" for="inlineRadio2">Mademoiselle</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="first_toggle" name="toggle_option"  value="m">
+          <label class="form-check-label" for="inlineRadio3">Monsieur</label>
+      </div>
+      <div class="row">
+          <div class="form-group col-sm-6">
+              <label for="nom">Nom et prénom</label>
+              <input type="text" class="form-control is-valid" id="nom" placeholder="Please enter your name" required>
+              <small id="nameHelp" class="form-text text-muted">nom doit comporter au minimum 8 caracteres</small>
+          </div>
+          <div class="form-group col-sm-6">
+              <label for="tel">N° du téléphone</label>
+              <input type="text" class="form-control is-valid" id="tel" placeholder="Enter your phone number" required>
+              <small id="telHelp" class="form-text text-muted">Numero tel doit etre au minimum a 8 chiffres</small>
+          </div>
+      </div>
+      <div class="row">
+          <div class="form-group col-sm-12">
+              <label for="nbpe">Table pour combien de personnes ?</label>
+              <select class="form-control" name="nbp" id="nbpe">
+                  <option value="-1">--Veuillez choisir---</option>
+                  <option value="1">Une place</option>
+                  <option value="2">Deux places</option>
+                  <option value="4">4 places</option>
+                  <option value="6">6 places</option>
+              </select>
+              <br />
+              <div id="chaisese"></div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="form-group col-sm-12">
+              <label for="datee">A quelle date vous allez venir ? </label>
+              <input name="date" type="text" id="datee" class="form-control date_picker" />          
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-12">
+              <label>Que voullez-vous manger ? </label>
+          </div>
+      </div>
+      <div class="form-group form-check-inline row">
+          <div class="col-sm-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="cmd" value="Salade" data-prix="5" id="box-1">
+              <label class="form-check-label checkbox-label" for="box-1" style="font-size:12px;">
+                  Salade
+              </label>
+
+              <input class="form-check-input" type="checkbox" name="cmd" value="Salade" data-prix="2.5" id="box-2">
+              <label class="form-check-label checkbox-label" for="box-2" style="font-size:12px;">
+                  Soupe
+              </label>
+
+              <input class="form-check-input" type="checkbox" name="cmd" value="Couscous" data-prix="15.5" id="box-3">
+              <label class="form-check-label checkbox-label" for="box-3" style="font-size:12px;">
+                  Couscous
+              </label>
+
+              <input class="form-check-input" type="checkbox" name="cmd"  value="Riz" data-prix="12" id="box-4">
+              <label class="form-check-label checkbox-label" for="box-4" style="font-size:12px;">
+                  Riz
+              </label>
+
+              <input class="form-check-input" type="checkbox" name="cmd"  value="Fruits" data-prix="7" id="box-5">
+              <label class="form-check-label checkbox-label" for="box-5" style="font-size:12px;">
+                  Fruits
+              </label>
+
+              <input class="form-check-input" type="checkbox" name="cmd"  value="Gateaux" data-prix="6.4" id="box-6">
+              <label class="form-check-label checkbox-label" for="box-6" style="font-size:12px;">
+                  Gateaux
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+              <div id="div_resume" class="msg"></div>
+            </div>
+        </div><br>
+        <div class="row">
+          <div class="col-sm-6">
+              <button type="button" class="btn btn-secondary">
+                <a href="./accueil.html" style="border:none;text-transform: none; color:#3c3c3c;font-size:14px;">Retour</a>
+              </button>
+          </div>
+          <div class="col-sm-6 text-right">
+              <button type="button" class="btn btn-primary" name="b1" id="b1">Reserver</button>
+          </div>
+        </div>
+
+    </form>
+
+  </div>
+  </div>   -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jsreservation.js"></script>
+  <script src="js/datePicker.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+  

@@ -1,0 +1,80 @@
+/* ---------- Card ----------- */
+body {
+    background: url(../img/ii.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.reservation-card{
+    margin: 50px auto;
+    border-radius: 6px;
+    width: 470px;
+    min-height: 550px;
+    background: #fff;
+    box-shadow: 4px 8px 2px rgba(0, 0, 0, 0.4);
+    transform: translate(0, -200px);
+    animation: slideInTop 500ms ease-in 0s 1 forwards;
+}
+@keyframes slideInTop{
+    from{
+        transform: translate(0, -200px);
+    }
+    to{
+        transform: translate(0, 0);
+    }
+}
+.msg{
+    opacity: 0;
+}
+.success-msg{
+    background: lightgreen;
+    border-radius: 6px;
+    padding: 10px;
+    transition: 2s all;
+    opacity: 1;
+}
+.reservation-card .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0;
+    width: 100%;
+    background: #ececec;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.reservation-card .header span{
+    font-size: 24px;
+    color: #4f4f50;
+}
+.reservation-card .reservation-form{
+    padding: 15px;
+}
+.reservation-card .date_picker{
+    background-color: #fff;
+}
+.checkbox-label{
+    margin: 0 10px 5px 0;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
